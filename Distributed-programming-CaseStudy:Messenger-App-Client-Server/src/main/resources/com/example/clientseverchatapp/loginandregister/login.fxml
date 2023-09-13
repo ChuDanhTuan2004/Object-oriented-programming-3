@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0"
+            prefWidth="520.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.clientseverchatapp.loginandregister.LoginController">
+    <left>
+        <AnchorPane prefHeight="492.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="brandimageview" fitHeight="492.0" fitWidth="228.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../../../../Pictures/vintagebrand.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="enterusernamelabel" layoutX="23.0" layoutY="81.0" text="Username"/>
+                <TextField fx:id="enterusernametextfield" layoutX="23.0" layoutY="98.0" prefHeight="25.0"
+                           prefWidth="245.0" promptText="Username"/>
+                <PasswordField fx:id="enterpasswordtextfield" layoutX="23.0" layoutY="154.0" prefHeight="25.0"
+                               prefWidth="245.0" promptText="Password"/>
+                <Label fx:id="enterpasswordlabel" layoutX="25.0" layoutY="137.0" text="Password"/>
+                <Button layoutX="187.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0"
+                        style="-fx-background-color: #E96151;" text="Cancel"/>
+                <Button fx:id="loginbutton" layoutX="24.0" layoutY="205.0" mnemonicParsing="false"
+                        onAction="#loginButtonAction" prefHeight="25.0" prefWidth="245.0"
+                        style="-fx-background-color: #ee994c;" text="Login"/>
+                <Label fx:id="loginmessagelabel" layoutX="35.0" layoutY="245.0" prefHeight="16.0" prefWidth="221.0"
+                       textFill="RED"/>
+                <Button fx:id="cancelbutton" layoutX="187.0" layoutY="284.0" mnemonicParsing="false"
+                        onAction="#cancelButtonAction" prefHeight="25.0" prefWidth="82.0"
+                        style="-fx-background-color: #ee994c;" text="Cancel"/>
+            </children>
+        </AnchorPane>
+    </right>
+    <center>
+        <ButtonBar BorderPane.alignment="CENTER">
+            <buttons>
+                <AnchorPane prefHeight="48.0" prefWidth="273.0"/>
+            </buttons>
+        </ButtonBar>
+    </center>
+</BorderPane>
