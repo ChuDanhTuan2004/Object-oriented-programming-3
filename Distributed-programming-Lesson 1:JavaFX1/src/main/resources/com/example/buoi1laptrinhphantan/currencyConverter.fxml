@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<GridPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.example.buoi1laptrinhphantan.CurrencyConverterController">
+    <Label text="USD:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="usdTextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label text="VND:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label fx:id="vndValueLabel" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Button text="Convert" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#convert"/>
+</GridPane>
